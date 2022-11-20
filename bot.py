@@ -78,6 +78,5 @@ async def helloworld(ctx):
 
 
 
-TOKEN = 'MTA0MzgyOTI0ODIxMDc4NDI5Ng.GRAv6q.elb5T7AlIy1FJaTnGpU22lzvcEfEVgREj1Lbr8'
-
+TOKEN = ''
 client.run(TOKEN)
