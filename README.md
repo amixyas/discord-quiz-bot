@@ -6,5 +6,8 @@
 virtualenv env
 source env/bin/activate
 pip install discord.py
+pip install django
+django-admin startproject quizbot .
+django-admin startapp quiz
 ```
 

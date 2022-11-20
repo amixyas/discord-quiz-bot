@@ -3,7 +3,7 @@ from discord.ext import commands
 
 client = discord.Client(intents=discord.Intents.default())
 
-TOKEN = 'MTA0MzgyOTI0ODIxMDc4NDI5Ng.Gh9DsP.MvHeKHBf1L0ZqPrasenxr86KaljQpjJjNGnlLU'
+TOKEN = 'MTA0MzgyOTI0ODIxMDc4NDI5Ng.GRAv6q.elb5T7AlIy1FJaTnGpU22lzvcEfEVgREj1Lbr8'
 #client = commands.Bot(command_prefix='!', intents=discord.Intents.default())
 
 @client.event
