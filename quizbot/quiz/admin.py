@@ -1,3 +1,12 @@
 from django.contrib import admin
+from . import models
 
-# Register your models here.
+
+@admin.register(models.Answer)
+
+class AnswerAdmin(admin.ModelAdmin):
+    list_display = [
+        'answer', 
+        'is_correct', 
+        'question'
+        ]
