@@ -45,7 +45,30 @@ async def on_message(message):
 """
 
 
+@client.event
+async def on_message(message):
+    if message.author == client.user:
+        return
 
+    if message.content.startswith('$question'):
+
+        qs, answer = get_question()
+        await message.channel.send(qs)
+
+        def check(m):
+            return m.author == message.author and m.content.isdigit() 
+
+        try:
+            guess = await client.wait_for('message', check=check, timeout=5.0)
+        except asyncio.TimeoutError:
+            return await message.channel.send('Sorry, you took too long')
+
+        if int(guess.content) == answer:
+            await message.channel.send('You are right!')
+        else:
+            await message.channel.send('Oops. That is not right')
+
+     
 
 """ 
 @client.command()
