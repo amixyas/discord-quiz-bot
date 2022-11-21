@@ -6,7 +6,7 @@ import asyncio
 
 client = discord.Client(intents=discord.Intents.default())
 
-#client = commands.Bot(command_prefix='!', intents=discord.Intents.default())
+client = commands.Bot(command_prefix='!', intents=discord.Intents.default())
 
 def get_question():
     qs = ''
